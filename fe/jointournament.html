@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="join.styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="joinTournamentForm">
+      <label for="tournamentUid">Tournament UID:</label>
+      <input type="text" id="tournamentUid" name="tournamentUid" placeholder="Enter Tournament UID" required>
+      <br><br>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <div id="response">
+      <!-- Response from backend will be shown here -->
+    </div>
+
+    <button id="enterTournamentBtn" style="display:none;">Enter Tournament</button>
+  </div>
+
+  <script src="join.script.js"></script>
+</body>
+</html>

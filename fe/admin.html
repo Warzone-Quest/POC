@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="tournamentForm">
+      <label for="numPlayers">Number of Players:</label>
+      <input type="number" id="numPlayers" name="numPlayers" required>
+      <br><br>
+      
+      <label for="numMods">Number of Mods:</label>
+      <input type="number" id="numMods" name="numMods" required>
+      <br><br>
+
+      <label for="tournamentName">Tournament Name:</label>
+      <input type="text" id="tournamentName" name="tournamentName" required>
+      <br><br>
+
+      <button type="submit">Create Tournament</button>
+    </form>
+
+    <div id="response">
+      <!-- Response from backend will be shown here -->
+    </div>
+
+    <button id="startTournamentBtn" style="display:none;">Start Tournament</button>
+  </div>
+
+  <script src="admin.script.js"></script>
+</body>
+</html>
